@@ -69,6 +69,22 @@ that's being tested.
 
 *Ch1 finished*
 
+## Ch2
+
+Vue conventional directory structure is outlined that uses vue-cli.
+It includes `/public` , `src/components`, and `src/api`.  The API functions
+are treated as a black box for our purposes, but they still could be useful
+to demonstrate good API writing style.
+`public/` is for assets that shouldn't be processed by webpack.
+
+`npm run serve` is used for the dev server.
+
+Find the example repo here:
+https://github.com/eddyerburgh/vue-hackernews
+
+Every chapter has its own branch.  It requires `vue-cli-service`, no idea what
+this is.  THe dev server spawns on localhost:8080.  It automatically loads
+'items' which is presaumably some API code.
 
 
 ## Errata from Dave
