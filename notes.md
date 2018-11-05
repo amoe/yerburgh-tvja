@@ -84,7 +84,8 @@ https://github.com/eddyerburgh/vue-hackernews
 
 Every chapter has its own branch.  It requires `vue-cli-service`, no idea what
 this is.  THe dev server spawns on localhost:8080.  It automatically loads
-'items' which is presaumably some API code.
+'items' which is presaumably some API code.  Firebase is used for the API
+for some reason that I can't understand.
 
 
 ## Errata from Dave
