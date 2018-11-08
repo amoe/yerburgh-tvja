@@ -137,6 +137,26 @@ SFCs.  `babel-jest` and `vue-jest`.  They are manually configured in the jest
 object inside package.json.  Having installed and configured these, we can
 at least build.
 
+The process of constructing a new instance inside a unit test looks as follows,
+where `Item` is your component.   `Ctor` is just an arbitrary name.
+
+    const Ctor = Vue.extend(Item);
+    const vm = new Ctor();
+
+To mount you call $mount explicitly (with no args).  Now you can access DOM
+nodes in $el.  Jest has some magic and runs test inside "JSDOM".
+
+There's an important conclusion here and that conclusion is that Jest is really
+the only sensible way to write unit tests because of the necessity of components
+to render using the DOM API.  The basic no-magic way to write tests looks as 
+follows.
+
+    const Ctor = Vue.extend(Item);
+    const vm = new Ctor();
+    vm.$mount();
+    expect(vm.$el.textContent).toContain('item');
+
+However vue-test-utils contains some type of magic to ease this.
 
 ## Errata from Dave
 
