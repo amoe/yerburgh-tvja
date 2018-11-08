@@ -109,6 +109,12 @@ it indicates that Jest has strict error checking, perhaps.  We enter the nightma
 where different tools don't know about each others' scoping rules.  Luckily
 eslint has a special setting for jest.
 
+So we talk about how expectations work in Jest.  `expect` returns a magic object
+that has a bunch of 'matcher' methods.
+
+Eslint is auto-fixing my problems but it can definitely go away.  Add --no-fix
+because vue-cli-service automatically wants to pass --fix parameter to eslint.
+
 ## Errata from Dave
 
 No proofreading comments: they have pro proofreaders

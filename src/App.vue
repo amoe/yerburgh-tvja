@@ -6,8 +6,8 @@
 import ItemList from './views/ItemList.vue'
 
 export default {
-  components: {
-    ItemList
-  }
+    components: {
+        ItemList
+    }
 }
 </script>

@@ -6,8 +6,8 @@
 import Item from '../components/Item.vue'
 
 export default {
-  components: {
-    Item
-  }
+    components: {
+        Item
+    }
 }
 </script>
