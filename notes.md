@@ -123,6 +123,9 @@ stage of TDD avoids false-positives.  Your test has to fail for the right reason
 **The red test should fail because the assertion evaluates to false**
 
 `describe` defines a test suite.  It takes a string argument and a function.
+The tip is to never nest 'describe', even though you can.  Just use longer
+test names.  I'd definitely agree with this tip, favouring a single
+descriptive test name even with redundancy.
 
 
 ## Errata from Dave
