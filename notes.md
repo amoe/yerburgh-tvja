@@ -100,6 +100,13 @@ that I normally write.
 We use Jest as the test runner.  We install jest and add the `test:unit` target
 to package.json.
 
+Now I remember how disgusting the default Jest configuration is, but I also
+remember some severe pain happening the last time that I tried to change it,
+so for now I'll just reluctantly go with it.
+
+The `test` function has to return a Promise or undefined.  This is cool because
+it indicates that Jest has strict error checking, perhaps.
+
 ## Errata from Dave
 
 No proofreading comments: they have pro proofreaders
