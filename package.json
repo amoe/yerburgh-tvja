@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test": "npm run lint"
+    "test": "npm run lint && npm run test:unit",
+    "test:unit": "jest"
   },
   "dependencies": {
     "firebase": "^5.0.4",
