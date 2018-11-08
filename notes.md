@@ -127,6 +127,16 @@ The tip is to never nest 'describe', even though you can.  Just use longer
 test names.  I'd definitely agree with this tip, favouring a single
 descriptive test name even with redundancy.
 
+And we also experience the failed configuration attached to not being able to
+import Vue files.  It's funny to experience this ecosystem clusterfuck in
+documented form.  People will look back on this and laugh, perhaps.  Apparently
+Jest and Webpack are incompatible because Webpack is asynchronous.
+
+We need to use a special 'transformer' to get Jest to work at all when importing
+SFCs.  `babel-jest` and `vue-jest`.  They are manually configured in the jest
+object inside package.json.  Having installed and configured these, we can
+at least build.
+
 
 ## Errata from Dave
 
