@@ -74,19 +74,31 @@ that's being tested.
 Vue conventional directory structure is outlined that uses vue-cli.
 It includes `/public` , `src/components`, and `src/api`.  The API functions
 are treated as a black box for our purposes, but they still could be useful
-to demonstrate good API writing style.
-`public/` is for assets that shouldn't be processed by webpack.
+to demonstrate good API writing style.  However it uses Firebase, so in my view
+it's bad by definition.
+
+`public/` is for assets that shouldn't be processed by webpack, unlike the
+`static` that we use.
 
 `npm run serve` is used for the dev server.
+`npm t` is a shortcut for `npm run test`.
+The `build` target runs webpack and constructs everything into a 'build'
+directory that can be deployed to a server.
+
 
 Find the example repo here:
 https://github.com/eddyerburgh/vue-hackernews
 
 Every chapter has its own branch.  It requires `vue-cli-service`, no idea what
 this is.  THe dev server spawns on localhost:8080.  It automatically loads
-'items' which is presaumably some API code.  Firebase is used for the API
+'items' which is presumably some API code.  Firebase is used for the API
 for some reason that I can't understand.
 
+Introduces the concept of a sanity test: this is basically the 2+2==4 test
+that I normally write.
+
+We use Jest as the test runner.  We install jest and add the `test:unit` target
+to package.json.
 
 ## Errata from Dave
 
