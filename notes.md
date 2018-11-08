@@ -105,7 +105,9 @@ remember some severe pain happening the last time that I tried to change it,
 so for now I'll just reluctantly go with it.
 
 The `test` function has to return a Promise or undefined.  This is cool because
-it indicates that Jest has strict error checking, perhaps.
+it indicates that Jest has strict error checking, perhaps.  We enter the nightmare
+where different tools don't know about each others' scoping rules.  Luckily
+eslint has a special setting for jest.
 
 ## Errata from Dave
 
