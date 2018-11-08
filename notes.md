@@ -115,6 +115,16 @@ that has a bunch of 'matcher' methods.
 Eslint is auto-fixing my problems but it can definitely go away.  Add --no-fix
 because vue-cli-service automatically wants to pass --fix parameter to eslint.
 
+Discusses avoiding false positives with example of async testing.  Obviously
+you want to wait in your test, you usually setTimeout to wait, but in this case
+your function will exit and so your assertion will never be called.  The red
+stage of TDD avoids false-positives.  Your test has to fail for the right reason.
+
+**The red test should fail because the assertion evaluates to false**
+
+`describe` defines a test suite.  It takes a string argument and a function.
+
+
 ## Errata from Dave
 
 No proofreading comments: they have pro proofreaders
