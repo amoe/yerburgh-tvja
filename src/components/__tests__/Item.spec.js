@@ -1,4 +1,5 @@
 import Item from '../Item.vue';
+import { mount } from '@vue/test-utils';
 import Vue from 'vue';
 
 describe('Item.vue', () => {
@@ -7,9 +8,7 @@ describe('Item.vue', () => {
     });
 
     test('contains its text once mounted', () => {
-        const Ctor = Vue.extend(Item);
-        const vm = new Ctor();
-        vm.$mount();
-        expect(vm.$el.textContent).toContain('item');
+        const wrapper = mount(Item);
+        expect(wrapper.vm.$el.textContent).toContain('item');
     });
 });

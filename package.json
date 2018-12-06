@@ -10,6 +10,7 @@
     "test:unit": "jest"
   },
   "dependencies": {
+    "@vue/test-utils": "^1.0.0-beta.26",
     "firebase": "^5.0.4",
     "vue": "^2.5.16"
   },
@@ -57,10 +58,10 @@
     "last 2 versions",
     "not ie <= 8"
   ],
-    "jest": {
-        "transform": {
-            "^.+\\.js$": "babel-jest",
-            "^.+\\.vue$": "vue-jest"
-        }
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.vue$": "vue-jest"
     }
+  }
 }
