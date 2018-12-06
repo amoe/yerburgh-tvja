@@ -1,5 +1,5 @@
 import Item from '../Item.vue';
-import { mount } from '@vue/test-utils';
+import { shallowMount } from '@vue/test-utils';
 import Vue from 'vue';
 
 describe('Item.vue', () => {
@@ -8,7 +8,7 @@ describe('Item.vue', () => {
     });
 
     test('contains its text once mounted', () => {
-        const wrapper = mount(Item);
-        expect(wrapper.vm.$el.textContent).toContain('item');
+        const wrapper = shallowMount(Item);
+        expect(wrapper.text()).toContain('item');
     });
 });

@@ -158,6 +158,14 @@ follows.
 
 However vue-test-utils contains some type of magic to ease this.
 
+That magic is the mount() function which returns a wrapper object.  The wrapper
+contains other cool stuff that you can use.  For instance, wrapper.text()
+is going to give you the textContent in a similar way.  So these are some
+abbreviations for the regular DOM api.
+
+There's also shallowMount which will only render one level deep and should
+probably be the default (as it is later).
+
 ## Errata from Dave
 
 No proofreading comments: they have pro proofreaders
