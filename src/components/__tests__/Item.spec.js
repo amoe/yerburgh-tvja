@@ -9,6 +9,7 @@ describe('Item.vue', () => {
 
     test('contains its text once mounted', () => {
         const wrapper = shallowMount(Item);
+        debugger;
         expect(wrapper.text()).toContain('item');
     });
 });

@@ -166,6 +166,10 @@ abbreviations for the regular DOM api.
 There's also shallowMount which will only render one level deep and should
 probably be the default (as it is later).
 
+The debugger magic statement sets a breakpoint in the code itself.  I can see
+the local variables.  Pretty cool, although --inspect-brk is quite the
+incantation.
+
 ## Errata from Dave
 
 No proofreading comments: they have pro proofreaders
